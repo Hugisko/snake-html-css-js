@@ -1,0 +1,144 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --main-bg-cl:  hsla(46, 81%, 60%, 0.568);
+    --main-cl: #EBEBEB;
+    --grid-bg: rgb(122, 121, 121);
+    --field-bg: rgb(46, 46, 46);
+    --button-cl: rgb(100, 101, 170);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    font-family: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    color: var(--main-cl);
+    background-color: var(--main-bg-cl);
+    display: grid;
+    place-items: center;
+    min-height: 100%;   
+}
+
+.grid-container {
+    width: 90vmin;
+    height: 115vmin;
+    background-color: var(--grid-bg);
+    border: 5px solid var(--grid-bg);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.reset-game {
+    background-color: var(--button-cl);
+    border: none;
+    padding-inline: 1rem;
+    border-radius: 15px;
+    color: var(--main-cl);
+    cursor: pointer;
+}
+
+.game-field {
+    background-color: var(--field-bg);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30,1fr) / repeat(30,1fr);
+}
+
+.apple {
+    background-color: red;
+}
+
+.snake {
+    background-color: green;
+}
+
+.controls {
+    margin-top: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+    font-size: .8rem;
+}
+
+.controls i {
+    background-color: var(--button-cl);
+    padding: 1rem;
+    flex: 1;
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    font-size: 2rem;
+    color: red;
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        width: 60vmin;
+        height: 70vmin;
+        margin: 2rem;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    .apple {
+        border-radius: 50%;
+    }
+}
+
+
