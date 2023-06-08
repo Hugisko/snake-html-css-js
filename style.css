@@ -7,11 +7,11 @@
   }
 
 :root {
-    --main-bg-cl:  hsla(46, 81%, 60%, 0.568);
+    --main-bg-cl:  hsla(194, 90%, 72%, 0.568);
     --main-cl: #EBEBEB;
-    --grid-bg: rgb(122, 121, 121);
+    --grid-bg: rgb(6, 27, 85);
     --field-bg: rgb(46, 46, 46);
-    --button-cl: rgb(100, 101, 170);
+    --button-cl: rgb(11, 224, 224);
 }
 
 html {
@@ -64,6 +64,7 @@ body {
     margin: 1rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 25px rgba(0, 15, 224, 0.5);
 }
 
 .game-info {
@@ -78,7 +79,7 @@ body {
     border: none;
     padding-inline: 1rem;
     border-radius: 15px;
-    color: var(--main-cl);
+    color: var(--grid-bg);
     cursor: pointer;
 }
 
@@ -95,7 +96,7 @@ body {
 }
 
 .snake {
-    background-color: green;
+    background-color: var(--button-cl);
 }
 
 .controls {
@@ -137,7 +138,7 @@ body {
     }
 
     .apple {
-        border-radius: 50%;
+        /* border-radius: 50%; */
     }
 }
 
