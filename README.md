@@ -8,8 +8,7 @@ Controls:
    - on mobile you can touch buttons with keys on the playfield
 
 
-![image](https://github.com/Hugisko/snake-html-css-js/assets/122363210/6fbd1b54-bb37-47ba-bffa-69f84552f1c6)
-![Bez názvu](https://github.com/Hugisko/snake-html-css-js/assets/122363210/fa8b0674-5eef-46ba-a55e-e8cf0a35a336)
-
+![Snimka_600x649](https://github.com/Hugisko/snake-html-css-js/assets/122363210/3e9139f6-26b0-4abd-9dfa-934784f9763a)
+![Bez_nazvu_600x649](https://github.com/Hugisko/snake-html-css-js/assets/122363210/eb1ff26f-4abc-494d-82b0-4ce067427455)
 
 
